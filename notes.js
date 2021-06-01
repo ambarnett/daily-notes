@@ -37,9 +37,12 @@ const createNote = (note) => {
     notes.push(note)
 }
 
+const time = new Date().getTime()
+const date = new Date(time)
+
 const moreNewerNote = {
     subject: "more more more practice with JS",
-    date: 20210601,
+    date: date.toString(),
     feeling: "I hate my allergies",
     timeSpent: 200
 }
